@@ -27,8 +27,26 @@ const main= async () =>{
     // const GetUser=await prisma.user.findMany();
     
     //singleid
-    const GetUserbyid= await prisma.user.findUnique({ where: {id:5}})
-    console.log(GetUserbyid)
+    // const GetUserbyid= await prisma.user.findUnique({ where: {id:5}})
+    // console.log(GetUserbyid)
+
+
+    //udpdate data
+
+//     const updateData=await prisma.user.update({where: {id:5},
+//         data: {name:"pari"}}
+//     )
+//     console.log(updateData)
+// }
+
+
+
+//delete data
+const deleteData= await prisma.user.delete({where:{id:5}}
+
+
+)
+console.log(deleteData)
 }
 
 main()
